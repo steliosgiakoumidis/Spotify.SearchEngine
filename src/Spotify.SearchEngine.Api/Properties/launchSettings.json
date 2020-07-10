@@ -1,0 +1,44 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:63022",
+      "sslPort": 44396
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "weatherforecast",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Spotify.SearchEngine": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "weatherforecast",
+      "environmentVariables": {
+        "AuthenticationUrl": "https://accounts.spotify.com/api/token",
+        "SearchUrl": "https://api.spotify.com/v1/search",
+        "ClientSecret": "8ed0bd039ad54d3585dfe676c0cb26a2",
+        "ClientId": "0ecaccc9c3bf41a9a3ef2381ae39646b",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/weatherforecast",
+      "environmentVariables": {
+        "Key": "Value"
+      },
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}
